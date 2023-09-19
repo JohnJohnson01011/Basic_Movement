@@ -30,5 +30,3 @@ if (!place_meeting(x, global.checkPosY, obj_Wall))
 {
 	y = global.checkPosY;
 }
-
-//part_particles_create(global.P_System, x + 13, y + 21, global.Particle1, 5);
