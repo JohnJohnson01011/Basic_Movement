@@ -14,7 +14,21 @@ if (!place_meeting(global.checkPosX, y, obj_Wall))
 {
 	x = global.checkPosX;
 }
+else if (!place_meeting(global.checkPosX, y + 4, obj_Wall))
+{
+	x = global.checkPosX;
+	global.checkPosY += 4;
+}
+else if (!place_meeting(global.checkPosX, y - 4, obj_Wall))
+{
+	x = global.checkPosX;
+	global.checkPosY -= 4;
+}
+
+
 if (!place_meeting(x, global.checkPosY, obj_Wall))
 {
 	y = global.checkPosY;
 }
+
+//part_particles_create(global.P_System, x + 13, y + 21, global.Particle1, 5);
