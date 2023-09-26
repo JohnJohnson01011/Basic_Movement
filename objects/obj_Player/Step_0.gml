@@ -30,5 +30,3 @@ if (!place_meeting(x, global.checkPosY, obj_Wall))
 {
 	y = global.checkPosY;
 }
-
-//camera_set_view_pos(view_camera[0], x - 683, y - 384)
