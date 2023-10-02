@@ -8,13 +8,13 @@ global.checkPosX = x + global.speedRight - global.speedLeft;
 global.checkPosY = y + global.speedDown - global.speedUp;
 
 // Checks if you'll collide with the wall before moving 
-//When adding more objects make it a table [x,y,z]
+// When adding more objects make it a table [x,y,z]
 
 if (!place_meeting(global.checkPosX, y, obj_Wall))
 {
 	x = global.checkPosX;
 }
-else if (!place_meeting(global.checkPosX, y + 4, obj_Wall))
+else if (!place_meeting(global.checkPosX, y + 4, obj_Wall)) // Small corrections
 {
 	x = global.checkPosX;
 	global.checkPosY += 4;
